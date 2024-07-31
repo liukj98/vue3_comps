@@ -1,0 +1,112 @@
+{
+  "resolvedId": "/Users/liukejun/Desktop/learn/vue3-learn/src/components/Test/Test.vue",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<template>\n  <h2>\n    {{ model }}\n    <button @click=\"handleClick\">change</button>\n  </h2>\n</template>\n\n<script setup lang=\"ts\">\nimport {ref, watch, onUpdated} from 'vue'\n\n// 语法糖咯\n// const model = defineModel();\n\nconst handleClick = () => {\n  model.value = new Date().toString();\n};\n\ntype TestProps = {\n  modelValue: string;\n}\n\nconst props = withDefaults(defineProps<TestProps>(), {\n  modelValue: \"hello\"\n});\n\nconst model = ref(props.modelValue);\n\nconst emit = defineEmits([\"update:modelValue\"]);\n\n// vite-plugin-inspect\n\nwatch(model, (value) => {\n  console.log(value, \"lkj\")\n  emit(\"update:modelValue\", value);\n}, {\n  immediate: true\n});\n\n</script>\n",
+      "start": 1722139778688,
+      "end": 1722139778710,
+      "sourcemaps": null
+    },
+    {
+      "name": "vite:css",
+      "start": 1722139778710,
+      "end": 1722139778710,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1722139778710,
+      "end": 1722139778710,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1722139778710,
+      "end": 1722139778710,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1722139778710,
+      "end": 1722139778710,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "import _sfc_main from \"/Users/liukejun/Desktop/learn/vue3-learn/src/components/Test/Test.vue?vue&type=script&setup=true&lang.ts\";\nexport * from \"/Users/liukejun/Desktop/learn/vue3-learn/src/components/Test/Test.vue?vue&type=script&setup=true&lang.ts\";\nexport default _sfc_main;\n",
+      "start": 1722139778710,
+      "end": 1722139778724,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1722139778724,
+      "end": 1722139778724,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1722139778724,
+      "end": 1722139778724,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1722139778724,
+      "end": 1722139778724,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1722139778724,
+      "end": 1722139778724,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1722139778724,
+      "end": 1722139778724,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1722139778724,
+      "end": 1722139778724,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1722139778724,
+      "end": 1722139778724,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1722139778724,
+      "end": 1722139778724,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1722139778724,
+      "end": 1722139778724,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1722139778724,
+      "end": 1722139778724,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1722139778724,
+      "end": 1722139778724,
+      "order": "normal"
+    }
+  ]
+}

@@ -1,0 +1,119 @@
+{
+  "resolvedId": "/Users/liukejun/Desktop/learn/vue3-learn/src/components/Radio/RadioGroup.vue?vue&type=script&setup=true&lang.ts",
+  "transforms": [
+    {
+      "name": "vite:vue",
+      "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { renderList as _renderList, Fragment as _Fragment, openBlock as _openBlock, createElementBlock as _createElementBlock, createBlock as _createBlock, createCommentVNode as _createCommentVNode, renderSlot as _renderSlot, normalizeStyle as _normalizeStyle } from \"vue\"\n\nimport { provide, ref, computed } from \"vue\";\nimport type { RadioGroupOption } from \"./index.ts\";\nimport Radio from \"./Radio.vue\"\n\ntype RadioGroupProps = {\n  modelValue: string | number | boolean;\n  direction?: \"horizontal\" | \"vertical\";\n  selectedBackgroundImage?: string;\n  unselectedBackgroundImage?: string;\n  options?: RadioGroupOption[];\n};\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'RadioGroup',\n  props: {\n    modelValue: { type: [String, Number, Boolean] },\n    direction: { default: \"horizontal\" },\n    selectedBackgroundImage: {},\n    unselectedBackgroundImage: {},\n    options: {}\n  },\n  emits: [\"update:modelValue\", \"change:modelValue\"],\n  setup(__props: any, { emit: __emit }) {\n\nconst hasOptions = computed(() => props.options && Array.isArray(props.options) && props.options.length > 0);\n\nconst props = __props;\n\nconst emits = __emit;\n\nprovide(\"radioGroup\", {\n  modelValue: ref(props.modelValue),\n  selectedBackgroundImage: ref(props.selectedBackgroundImage),\n  unselectedBackgroundImage: ref(props.unselectedBackgroundImage),\n  updateModelValue: (value: string | number | boolean) => {\n    emits(\"update:modelValue\", value);\n  },\n  changeModelValue: (value: string | number | boolean, e: Event) => {\n    emits(\"change:modelValue\", value, e);\n  },\n});\n\nreturn (_ctx: any,_cache: any) => {\n  return (_openBlock(), _createElementBlock(\"div\", {\n    class: \"radio-group\",\n    style: _normalizeStyle({\n      display: 'flex',\n      flexDirection: _ctx.direction === 'horizontal' ? 'row' : 'column',\n    })\n  }, [\n    (hasOptions.value === true)\n      ? (_openBlock(true), _createElementBlock(_Fragment, { key: 0 }, _renderList(_ctx.options, (item) => {\n          return (_openBlock(), _createBlock(Radio, {\n            value: item.value,\n            label: item.label\n          }, null, 8, [\"value\", \"label\"]))\n        }), 256))\n      : _renderSlot(_ctx.$slots, \"default\", { key: 1 })\n  ], 4))\n}\n}\n\n})",
+      "start": 1722139778726,
+      "end": 1722139778726
+    },
+    {
+      "name": "vite:css",
+      "start": 1722139778726,
+      "end": 1722139778726,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "result": "import { defineComponent as _defineComponent } from \"vue\";\nimport { renderList as _renderList, Fragment as _Fragment, openBlock as _openBlock, createElementBlock as _createElementBlock, createBlock as _createBlock, createCommentVNode as _createCommentVNode, renderSlot as _renderSlot, normalizeStyle as _normalizeStyle } from \"vue\";\nimport { provide, ref, computed } from \"vue\";\nimport Radio from \"./Radio.vue\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"RadioGroup\",\n  props: {\n    modelValue: { type: [String, Number, Boolean] },\n    direction: { default: \"horizontal\" },\n    selectedBackgroundImage: {},\n    unselectedBackgroundImage: {},\n    options: {}\n  },\n  emits: [\"update:modelValue\", \"change:modelValue\"],\n  setup(__props, { emit: __emit }) {\n    const hasOptions = computed(() => props.options && Array.isArray(props.options) && props.options.length > 0);\n    const props = __props;\n    const emits = __emit;\n    provide(\"radioGroup\", {\n      modelValue: ref(props.modelValue),\n      selectedBackgroundImage: ref(props.selectedBackgroundImage),\n      unselectedBackgroundImage: ref(props.unselectedBackgroundImage),\n      updateModelValue: (value) => {\n        emits(\"update:modelValue\", value);\n      },\n      changeModelValue: (value, e) => {\n        emits(\"change:modelValue\", value, e);\n      }\n    });\n    return (_ctx, _cache) => {\n      return _openBlock(), _createElementBlock(\"div\", {\n        class: \"radio-group\",\n        style: _normalizeStyle({\n          display: \"flex\",\n          flexDirection: _ctx.direction === \"horizontal\" ? \"row\" : \"column\"\n        })\n      }, [\n        hasOptions.value === true ? (_openBlock(true), _createElementBlock(_Fragment, { key: 0 }, _renderList(_ctx.options, (item) => {\n          return _openBlock(), _createBlock(Radio, {\n            value: item.value,\n            label: item.label\n          }, null, 8, [\"value\", \"label\"]);\n        }), 256)) : _renderSlot(_ctx.$slots, \"default\", { key: 1 })\n      ], 4);\n    };\n  }\n});\n",
+      "start": 1722139778726,
+      "end": 1722139778740,
+      "order": "normal",
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          "/Users/liukejun/Desktop/learn/vue3-learn/src/components/Radio/RadioGroup.vue?vue&type=script&setup=true&lang.ts"
+        ],
+        "sourcesContent": [
+          "import { defineComponent as _defineComponent } from 'vue'\nimport { renderList as _renderList, Fragment as _Fragment, openBlock as _openBlock, createElementBlock as _createElementBlock, createBlock as _createBlock, createCommentVNode as _createCommentVNode, renderSlot as _renderSlot, normalizeStyle as _normalizeStyle } from \"vue\"\n\nimport { provide, ref, computed } from \"vue\";\nimport type { RadioGroupOption } from \"./index.ts\";\nimport Radio from \"./Radio.vue\"\n\ntype RadioGroupProps = {\n  modelValue: string | number | boolean;\n  direction?: \"horizontal\" | \"vertical\";\n  selectedBackgroundImage?: string;\n  unselectedBackgroundImage?: string;\n  options?: RadioGroupOption[];\n};\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'RadioGroup',\n  props: {\n    modelValue: { type: [String, Number, Boolean] },\n    direction: { default: \"horizontal\" },\n    selectedBackgroundImage: {},\n    unselectedBackgroundImage: {},\n    options: {}\n  },\n  emits: [\"update:modelValue\", \"change:modelValue\"],\n  setup(__props: any, { emit: __emit }) {\n\nconst hasOptions = computed(() => props.options && Array.isArray(props.options) && props.options.length > 0);\n\nconst props = __props;\n\nconst emits = __emit;\n\nprovide(\"radioGroup\", {\n  modelValue: ref(props.modelValue),\n  selectedBackgroundImage: ref(props.selectedBackgroundImage),\n  unselectedBackgroundImage: ref(props.unselectedBackgroundImage),\n  updateModelValue: (value: string | number | boolean) => {\n    emits(\"update:modelValue\", value);\n  },\n  changeModelValue: (value: string | number | boolean, e: Event) => {\n    emits(\"change:modelValue\", value, e);\n  },\n});\n\nreturn (_ctx: any,_cache: any) => {\n  return (_openBlock(), _createElementBlock(\"div\", {\n    class: \"radio-group\",\n    style: _normalizeStyle({\n      display: 'flex',\n      flexDirection: _ctx.direction === 'horizontal' ? 'row' : 'column',\n    })\n  }, [\n    (hasOptions.value === true)\n      ? (_openBlock(true), _createElementBlock(_Fragment, { key: 0 }, _renderList(_ctx.options, (item) => {\n          return (_openBlock(), _createBlock(Radio, {\n            value: item.value,\n            label: item.label\n          }, null, 8, [\"value\", \"label\"]))\n        }), 256))\n      : _renderSlot(_ctx.$slots, \"default\", { key: 1 })\n  ], 4))\n}\n}\n\n})"
+        ],
+        "mappings": "AAAA,SAAS,mBAAmB,wBAAwB;AACpD,SAAS,cAAc,aAAa,YAAY,WAAW,aAAa,YAAY,sBAAsB,qBAAqB,eAAe,cAAc,sBAAsB,qBAAqB,cAAc,aAAa,kBAAkB,uBAAuB;AAE3Q,SAAS,SAAS,KAAK,gBAAgB;AAEvC,OAAO,WAAW;AAWlB,eAA4B,iCAAiB;AAAA,EAC3C,QAAQ;AAAA,EACR,OAAO;AAAA,IACL,YAAY,EAAE,MAAM,CAAC,QAAQ,QAAQ,OAAO,EAAE;AAAA,IAC9C,WAAW,EAAE,SAAS,aAAa;AAAA,IACnC,yBAAyB,CAAC;AAAA,IAC1B,2BAA2B,CAAC;AAAA,IAC5B,SAAS,CAAC;AAAA,EACZ;AAAA,EACA,OAAO,CAAC,qBAAqB,mBAAmB;AAAA,EAChD,MAAM,SAAc,EAAE,MAAM,OAAO,GAAG;AAExC,UAAM,aAAa,SAAS,MAAM,MAAM,WAAW,MAAM,QAAQ,MAAM,OAAO,KAAK,MAAM,QAAQ,SAAS,CAAC;AAE3G,UAAM,QAAQ;AAEd,UAAM,QAAQ;AAEd,YAAQ,cAAc;AAAA,MACpB,YAAY,IAAI,MAAM,UAAU;AAAA,MAChC,yBAAyB,IAAI,MAAM,uBAAuB;AAAA,MAC1D,2BAA2B,IAAI,MAAM,yBAAyB;AAAA,MAC9D,kBAAkB,CAAC,UAAqC;AACtD,cAAM,qBAAqB,KAAK;AAAA,MAClC;AAAA,MACA,kBAAkB,CAAC,OAAkC,MAAa;AAChE,cAAM,qBAAqB,OAAO,CAAC;AAAA,MACrC;AAAA,IACF,CAAC;AAED,WAAO,CAAC,MAAU,WAAgB;AAChC,aAAQ,WAAW,GAAG,oBAAoB,OAAO;AAAA,QAC/C,OAAO;AAAA,QACP,OAAO,gBAAgB;AAAA,UACrB,SAAS;AAAA,UACT,eAAe,KAAK,cAAc,eAAe,QAAQ;AAAA,QAC3D,CAAC;AAAA,MACH,GAAG;AAAA,QACA,WAAW,UAAU,QACjB,WAAW,IAAI,GAAG,oBAAoB,WAAW,EAAE,KAAK,EAAE,GAAG,YAAY,KAAK,SAAS,CAAC,SAAS;AAChG,iBAAQ,WAAW,GAAG,aAAa,OAAO;AAAA,YACxC,OAAO,KAAK;AAAA,YACZ,OAAO,KAAK;AAAA,UACd,GAAG,MAAM,GAAG,CAAC,SAAS,OAAO,CAAC;AAAA,QAChC,CAAC,GAAG,GAAG,KACP,YAAY,KAAK,QAAQ,WAAW,EAAE,KAAK,EAAE,CAAC;AAAA,MACpD,GAAG,CAAC;AAAA,IACN;AAAA,EACA;AAEA,CAAC;",
+        "names": []
+      }
+    },
+    {
+      "name": "vite:json",
+      "start": 1722139778740,
+      "end": 1722139778740,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1722139778740,
+      "end": 1722139778740,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "start": 1722139778740,
+      "end": 1722139778740,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1722139778740,
+      "end": 1722139778740,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1722139778740,
+      "end": 1722139778740,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1722139778740,
+      "end": 1722139778740,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1722139778740,
+      "end": 1722139778740,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1722139778740,
+      "end": 1722139778740,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1722139778740,
+      "end": 1722139778740,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1722139778740,
+      "end": 1722139778740,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1722139778740,
+      "end": 1722139778740,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1722139778740,
+      "end": 1722139778740,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1722139778740,
+      "end": 1722139778740,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1722139778740,
+      "end": 1722139778740,
+      "order": "normal"
+    }
+  ]
+}

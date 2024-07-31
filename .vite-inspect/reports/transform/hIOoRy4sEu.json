@@ -1,0 +1,112 @@
+{
+  "resolvedId": "/Users/liukejun/Desktop/learn/vue3-learn/src/components/Toast/Toast.vue",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<!-- Toast.vue -->\n<template>\n  <div v-if=\"visible\" class=\"toast\" :class=\"type\">\n    {{ message }}\n  </div>\n</template>\n\n<script setup lang=\"ts\">\nimport { ref, withDefaults } from \"vue\";\n\ntype ToastProps = {\n  message: string;\n  type?: \"info\" | \"success\" | \"warning\" | \"error\";\n  duration?: number;\n};\n\n// Props for the Toast component\nconst props = withDefaults(defineProps<ToastProps>(), {\n  type: \"info\",\n  duration: 3000,\n});\n\nconst visible = ref(false);\n\nconst show = () => {\n  visible.value = true;\n  setTimeout(() => {\n    visible.value = false;\n  }, props.duration);\n};\n\n// Show the toast on mount\nshow();\n</script>\n\n<style scoped>\n.toast {\n  position: fixed;\n  bottom: 20px;\n  left: 50%;\n  transform: translateX(-50%);\n  padding: 10px 20px;\n  color: white;\n  border-radius: 5px;\n  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);\n  z-index: 1000;\n}\n\n.toast.info {\n  background-color: #2196f3;\n}\n\n.toast.success {\n  background-color: #4caf50;\n}\n\n.toast.warning {\n  background-color: #ff9800;\n}\n\n.toast.error {\n  background-color: #f44336;\n}\n</style>\n",
+      "start": 1722139778679,
+      "end": 1722139778689,
+      "sourcemaps": null
+    },
+    {
+      "name": "vite:css",
+      "start": 1722139778689,
+      "end": 1722139778689,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1722139778689,
+      "end": 1722139778689,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1722139778689,
+      "end": 1722139778689,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1722139778689,
+      "end": 1722139778689,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "import _sfc_main from \"/Users/liukejun/Desktop/learn/vue3-learn/src/components/Toast/Toast.vue?vue&type=script&setup=true&lang.ts\";\nexport * from \"/Users/liukejun/Desktop/learn/vue3-learn/src/components/Toast/Toast.vue?vue&type=script&setup=true&lang.ts\";\nimport \"/Users/liukejun/Desktop/learn/vue3-learn/src/components/Toast/Toast.vue?vue&type=style&index=0&scoped=f62acddb&lang.css\";\nimport _export_sfc from \"\\0plugin-vue:export-helper\";\nexport default /* @__PURE__ */ _export_sfc(_sfc_main, [[\"__scopeId\", \"data-v-f62acddb\"]]);\n",
+      "start": 1722139778689,
+      "end": 1722139778707,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1722139778707,
+      "end": 1722139778707,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1722139778707,
+      "end": 1722139778707,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1722139778707,
+      "end": 1722139778707,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1722139778707,
+      "end": 1722139778707,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1722139778707,
+      "end": 1722139778707,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1722139778707,
+      "end": 1722139778707,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1722139778707,
+      "end": 1722139778707,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1722139778707,
+      "end": 1722139778707,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1722139778707,
+      "end": 1722139778707,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1722139778707,
+      "end": 1722139778707,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1722139778707,
+      "end": 1722139778707,
+      "order": "normal"
+    }
+  ]
+}

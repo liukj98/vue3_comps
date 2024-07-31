@@ -1,0 +1,107 @@
+{
+  "resolvedId": "/Users/liukejun/Desktop/learn/vue3-learn/src/assets/checkbox-unchecked.png",
+  "transforms": [
+    {
+      "name": "vite:asset",
+      "result": "export default \"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAYAAACtWK6eAAAAAXNSR0IArs4c6QAABqRJREFUeF7t2tGtG0QYBeG4MlLNbQNow9VAZUYpIJFmJQPH+/F81vE/49F94fHNfwgg8FMCD2wQQODnBATi14HALwgIxM8DAYH4DSBwRsBfkDNuXl1CQCCXiHbmGQGBnHHz6hICArlEtDPPCAjkjJtXlxAQyCWinXlGQCBn3Ly6hIBALhHtzDMCAjnj5tUlBARyiWhnnhEQyBk3ry4hIJBLRDvzjIBAzrh5dQkBgVwi2plnBARyxs2rSwgI5BLRzjwjIJAzbl5dQkAgl4h25hkBgZxx8+oSAgK5RLQzzwj8K4F8fX29zr6eVwj8nMDz+Xz77/ft/8CP8wTiZ/4OAgJ5B1Wf+TEEBPIxKh3yDgICeQdVn/kxBATyMSod8g4CAnkHVZ/5MQQE8jEqHfIOAgJ5B1Wf+TEEBPIxKh3yDgICeQdVn/kxBATyMSod8g4C1wbyeDz+er1ef78Dqs/8fxJ4PB6/vV6v7+XbXRvIt2/f/nw+n38UWLbbBL6+vn74/r1cIZBCy3aagECaPn9BGq/5tUCaQoE0XvNrgTSFAmm85tcCaQoF0njNrwXSFAqk8ZpfC6QpFEjjNb8WSFMokMZrfi2QplAgjdf8WiBNoUAar/m1QJpCgTRe82uBNIUCabzm1wJpCgXSeM2vBdIUCqTxml8LpCkUSOM1vxZIUyiQxmt+LZCmUCCN1/xaIE2hQBqv+bVAmkKBNF7za4E0hQJpvObXAmkKBdJ4za8F0hQKpPGaXwukKRRI4zW/FkhTKJDGa34tkKZQII3X/FogTaFAGq/5tUCaQoE0XvNrgTSFAmm85tcCaQoF0njNrwXSFAqk8ZpfC6QpFEjjNb8WSFMokMZrfi2QplAgjdf8WiBNoUAar/m1QJpCgTRe82uBNIUCabzm1wJpCgXSeM2vBdIUCqTxml8LpCkUSOM1vxZIUyiQxmt+LZCmUCCN1/xaIE2hQBqv+bVAmkKBNF7za4E0hQJpvObXAmkKBdJ4za8F0hQKpPGaXwukKRRI4zW/FkhTKJDGa34tkKZQII3X/FogTaFAGq/5tUCaQoE0XvNrgTSFAmm85tcCaQoF0njNrwXSFAqk8ZpfC6QpFEjjNb8WSFMokMZrfi2QplAgjdf8WiBNoUAar/m1QJpCgTRe82uBNIUCabzm1wJpCgXSeM2vBdIUCqTxml8LpCkUSOM1vxZIUyiQxmt+LZCmUCCN1/xaIE2hQBqv+bVAmkKBNF7za4E0hQJpvObXAmkKBdJ4za8F0hQKpPGaXwukKRRI4zW/FkhTKJDGa34tkKZQII3X/FogTaFAGq/5tUCaQoE0XvNrgTSFAmm85tcCaQoF0njNrwXSFAqk8ZpfC6QpFEjjNb8WSFMokMZrfi2QplAgjdf8WiBNoUAar/m1QJpCgTRe82uBNIUCabzm1wJpCgXSeM2vBdIUCqTxml8LpCkUSOM1vxZIUyiQxmt+LZCmUCCN1/xaIE2hQBqv+bVAmkKBNF7za4E0hQJpvObXAmkKBdJ4za8F0hQKpPGaXwukKRRI4zW/FkhTKJDGa34tkKZQII3X/FogTaFAGq/5tUCaQoE0XvNrgTSFAmm85tcCaQoF0njNrwXSFAqk8ZpfC6QpFEjjNb8WSFMokMZrfi2QplAgjdf8WiBNoUAar/m1QJpCgTRe82uBNIUCabzm1wJpCgXSeM2vBdIUCqTxml8LpCkUSOM1vxZIUyiQxmt+LZCmUCCN1/xaIE2hQBqv+bVAmkKBNF7za4E0hQJpvObXAmkKBdJ4za8F0hQKpPGaXwukKRRI4zW/FkhTKJDGa34tkKZQII3X/FogTaFAGq/5tUCaQoE0XvNrgQSFj8fjr9fr9Xd4YjpO4PF4/PZ6vb6XM57P56PsT7Zv/wd+fKmvr6/XyZfzBoFfERCI3wcCvyAgED8PBATiN4DAGQF/Qc64eXUJAYFcItqZZwQEcsbNq0sICOQS0c48IyCQM25eXUJAIJeIduYZAYGccfPqEgICuUS0M88IfEwgZ+d7hcB/T+Bf+Z8V//szfQMEzggI5IybV5cQEMglop15RkAgZ9y8uoSAQC4R7cwzAgI54+bVJQQEcoloZ54REMgZN68uISCQS0Q784yAQM64eXUJAYFcItqZZwQEcsbNq0sICOQS0c48IyCQM25eXUJAIJeIduYZAYGccfPqEgICuUS0M88ICOSMm1eXEBDIJaKdeUZAIGfcvLqEgEAuEe3MMwICOePm1SUEBHKJaGeeERDIGTevLiHwD3yq1QUyskBhAAAAAElFTkSuQmCC\"",
+      "start": 1722139778688,
+      "end": 1722139778706
+    },
+    {
+      "name": "vite:css",
+      "start": 1722139778706,
+      "end": 1722139778706,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1722139778706,
+      "end": 1722139778706,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1722139778706,
+      "end": 1722139778706,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1722139778706,
+      "end": 1722139778706,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "start": 1722139778706,
+      "end": 1722139778706,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1722139778706,
+      "end": 1722139778706,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1722139778706,
+      "end": 1722139778706,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1722139778706,
+      "end": 1722139778706,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1722139778706,
+      "end": 1722139778706,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1722139778706,
+      "end": 1722139778706,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1722139778706,
+      "end": 1722139778706,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1722139778706,
+      "end": 1722139778706,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1722139778706,
+      "end": 1722139778706,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1722139778706,
+      "end": 1722139778706,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1722139778706,
+      "end": 1722139778706,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1722139778706,
+      "end": 1722139778706,
+      "order": "normal"
+    }
+  ]
+}

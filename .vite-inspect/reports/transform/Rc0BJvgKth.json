@@ -1,0 +1,112 @@
+{
+  "resolvedId": "/Users/liukejun/Desktop/learn/vue3-learn/src/components/Radio/RadioGroup.vue",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<template>\n  <div\n    class=\"radio-group\"\n    :style=\"{\n      display: 'flex',\n      flexDirection: direction === 'horizontal' ? 'row' : 'column',\n    }\"\n  >\n    <template v-if=\"hasOptions === true\">\n      <Radio v-for=\"item in options\" :value=\"item.value\" :label=\"item.label\" />\n    </template>\n    <template v-else>\n      <slot></slot>\n    </template>\n  </div>\n</template>\n\n<script setup lang=\"ts\">\nimport { provide, ref, computed } from \"vue\";\nimport type { RadioGroupOption } from \"./index.ts\";\nimport Radio from \"./Radio.vue\"\n\ntype RadioGroupProps = {\n  modelValue: string | number | boolean;\n  direction?: \"horizontal\" | \"vertical\";\n  selectedBackgroundImage?: string;\n  unselectedBackgroundImage?: string;\n  options?: RadioGroupOption[];\n};\n\nconst hasOptions = computed(() => props.options && Array.isArray(props.options) && props.options.length > 0);\n\nconst props = withDefaults(defineProps<RadioGroupProps>(), {\n  direction: \"horizontal\",\n});\n\nconst emits = defineEmits([\"update:modelValue\", \"change:modelValue\"]);\n\nprovide(\"radioGroup\", {\n  modelValue: ref(props.modelValue),\n  selectedBackgroundImage: ref(props.selectedBackgroundImage),\n  unselectedBackgroundImage: ref(props.unselectedBackgroundImage),\n  updateModelValue: (value: string | number | boolean) => {\n    emits(\"update:modelValue\", value);\n  },\n  changeModelValue: (value: string | number | boolean, e: Event) => {\n    emits(\"change:modelValue\", value, e);\n  },\n});\n</script>\n",
+      "start": 1722139778688,
+      "end": 1722139778695,
+      "sourcemaps": null
+    },
+    {
+      "name": "vite:css",
+      "start": 1722139778695,
+      "end": 1722139778695,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1722139778695,
+      "end": 1722139778695,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1722139778695,
+      "end": 1722139778695,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1722139778695,
+      "end": 1722139778695,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "import _sfc_main from \"/Users/liukejun/Desktop/learn/vue3-learn/src/components/Radio/RadioGroup.vue?vue&type=script&setup=true&lang.ts\";\nexport * from \"/Users/liukejun/Desktop/learn/vue3-learn/src/components/Radio/RadioGroup.vue?vue&type=script&setup=true&lang.ts\";\nexport default _sfc_main;\n",
+      "start": 1722139778695,
+      "end": 1722139778717,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1722139778717,
+      "end": 1722139778717,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1722139778717,
+      "end": 1722139778717,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1722139778717,
+      "end": 1722139778717,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1722139778717,
+      "end": 1722139778717,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1722139778723,
+      "end": 1722139778723,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1722139778723,
+      "end": 1722139778723,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1722139778723,
+      "end": 1722139778723,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1722139778723,
+      "end": 1722139778723,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1722139778723,
+      "end": 1722139778723,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1722139778723,
+      "end": 1722139778724,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1722139778724,
+      "end": 1722139778724,
+      "order": "normal"
+    }
+  ]
+}

@@ -1,0 +1,119 @@
+{
+  "resolvedId": "/Users/liukejun/Desktop/learn/vue3-learn/src/components/Test/Test.vue?vue&type=script&setup=true&lang.ts",
+  "transforms": [
+    {
+      "name": "vite:vue",
+      "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { toDisplayString as _toDisplayString, createElementVNode as _createElementVNode, createTextVNode as _createTextVNode, openBlock as _openBlock, createElementBlock as _createElementBlock } from \"vue\"\n\nimport {ref, watch, onUpdated} from 'vue'\n\n// 语法糖咯\n// const model = defineModel();\n\ntype TestProps = {\n  modelValue: string;\n}\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'Test',\n  props: {\n    modelValue: { default: \"hello\" }\n  },\n  emits: [\"update:modelValue\"],\n  setup(__props: any, { emit: __emit }) {\n\nconst handleClick = () => {\n  model.value = new Date().toString();\n};\n\nconst props = __props;\n\nconst model = ref(props.modelValue);\n\nconst emit = __emit;\n\n// vite-plugin-inspect\n\nwatch(model, (value) => {\n  console.log(value, \"lkj\")\n  emit(\"update:modelValue\", value);\n}, {\n  immediate: true\n});\n\n\nreturn (_ctx: any,_cache: any) => {\n  return (_openBlock(), _createElementBlock(\"h2\", null, [\n    _createTextVNode(_toDisplayString(model.value) + \" \", 1),\n    _createElementVNode(\"button\", { onClick: handleClick }, \"change\")\n  ]))\n}\n}\n\n})",
+      "start": 1722139778729,
+      "end": 1722139778729
+    },
+    {
+      "name": "vite:css",
+      "start": 1722139778729,
+      "end": 1722139778729,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "result": "import { defineComponent as _defineComponent } from \"vue\";\nimport { toDisplayString as _toDisplayString, createElementVNode as _createElementVNode, createTextVNode as _createTextVNode, openBlock as _openBlock, createElementBlock as _createElementBlock } from \"vue\";\nimport { ref, watch, onUpdated } from \"vue\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"Test\",\n  props: {\n    modelValue: { default: \"hello\" }\n  },\n  emits: [\"update:modelValue\"],\n  setup(__props, { emit: __emit }) {\n    const handleClick = () => {\n      model.value = (/* @__PURE__ */ new Date()).toString();\n    };\n    const props = __props;\n    const model = ref(props.modelValue);\n    const emit = __emit;\n    watch(model, (value) => {\n      console.log(value, \"lkj\");\n      emit(\"update:modelValue\", value);\n    }, {\n      immediate: true\n    });\n    return (_ctx, _cache) => {\n      return _openBlock(), _createElementBlock(\"h2\", null, [\n        _createTextVNode(_toDisplayString(model.value) + \" \", 1),\n        _createElementVNode(\"button\", { onClick: handleClick }, \"change\")\n      ]);\n    };\n  }\n});\n",
+      "start": 1722139778729,
+      "end": 1722139778743,
+      "order": "normal",
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          "/Users/liukejun/Desktop/learn/vue3-learn/src/components/Test/Test.vue?vue&type=script&setup=true&lang.ts"
+        ],
+        "sourcesContent": [
+          "import { defineComponent as _defineComponent } from 'vue'\nimport { toDisplayString as _toDisplayString, createElementVNode as _createElementVNode, createTextVNode as _createTextVNode, openBlock as _openBlock, createElementBlock as _createElementBlock } from \"vue\"\n\nimport {ref, watch, onUpdated} from 'vue'\n\n// 语法糖咯\n// const model = defineModel();\n\ntype TestProps = {\n  modelValue: string;\n}\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'Test',\n  props: {\n    modelValue: { default: \"hello\" }\n  },\n  emits: [\"update:modelValue\"],\n  setup(__props: any, { emit: __emit }) {\n\nconst handleClick = () => {\n  model.value = new Date().toString();\n};\n\nconst props = __props;\n\nconst model = ref(props.modelValue);\n\nconst emit = __emit;\n\n// vite-plugin-inspect\n\nwatch(model, (value) => {\n  console.log(value, \"lkj\")\n  emit(\"update:modelValue\", value);\n}, {\n  immediate: true\n});\n\n\nreturn (_ctx: any,_cache: any) => {\n  return (_openBlock(), _createElementBlock(\"h2\", null, [\n    _createTextVNode(_toDisplayString(model.value) + \" \", 1),\n    _createElementVNode(\"button\", { onClick: handleClick }, \"change\")\n  ]))\n}\n}\n\n})"
+        ],
+        "mappings": "AAAA,SAAS,mBAAmB,wBAAwB;AACpD,SAAS,mBAAmB,kBAAkB,sBAAsB,qBAAqB,mBAAmB,kBAAkB,aAAa,YAAY,sBAAsB,2BAA2B;AAExM,SAAQ,KAAK,OAAO,iBAAgB;AAUpC,eAA4B,iCAAiB;AAAA,EAC3C,QAAQ;AAAA,EACR,OAAO;AAAA,IACL,YAAY,EAAE,SAAS,QAAQ;AAAA,EACjC;AAAA,EACA,OAAO,CAAC,mBAAmB;AAAA,EAC3B,MAAM,SAAc,EAAE,MAAM,OAAO,GAAG;AAExC,UAAM,cAAc,MAAM;AACxB,YAAM,SAAQ,oBAAI,KAAK,GAAE,SAAS;AAAA,IACpC;AAEA,UAAM,QAAQ;AAEd,UAAM,QAAQ,IAAI,MAAM,UAAU;AAElC,UAAM,OAAO;AAIb,UAAM,OAAO,CAAC,UAAU;AACtB,cAAQ,IAAI,OAAO,KAAK;AACxB,WAAK,qBAAqB,KAAK;AAAA,IACjC,GAAG;AAAA,MACD,WAAW;AAAA,IACb,CAAC;AAGD,WAAO,CAAC,MAAU,WAAgB;AAChC,aAAQ,WAAW,GAAG,oBAAoB,MAAM,MAAM;AAAA,QACpD,iBAAiB,iBAAiB,MAAM,KAAK,IAAI,KAAK,CAAC;AAAA,QACvD,oBAAoB,UAAU,EAAE,SAAS,YAAY,GAAG,QAAQ;AAAA,MAClE,CAAC;AAAA,IACH;AAAA,EACA;AAEA,CAAC;",
+        "names": []
+      }
+    },
+    {
+      "name": "vite:json",
+      "start": 1722139778743,
+      "end": 1722139778743,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1722139778743,
+      "end": 1722139778743,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "start": 1722139778743,
+      "end": 1722139778743,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1722139778743,
+      "end": 1722139778743,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1722139778743,
+      "end": 1722139778743,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1722139778743,
+      "end": 1722139778743,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1722139778743,
+      "end": 1722139778743,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1722139778743,
+      "end": 1722139778743,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1722139778743,
+      "end": 1722139778743,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1722139778743,
+      "end": 1722139778743,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1722139778743,
+      "end": 1722139778743,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1722139778743,
+      "end": 1722139778743,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1722139778743,
+      "end": 1722139778743,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1722139778743,
+      "end": 1722139778743,
+      "order": "normal"
+    }
+  ]
+}

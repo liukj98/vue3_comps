@@ -1,0 +1,112 @@
+{
+  "resolvedId": "/Users/liukejun/Desktop/learn/vue3-learn/src/App.vue",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<script setup lang=\"ts\">\nimport { ref } from \"vue\";\nimport Radio from \"./components/Radio/Radio.vue\";\nimport RadioGroup from \"./components/Radio/RadioGroup.vue\";\nimport Checkbox from \"./components/Checkbox/Checkbox.vue\";\nimport CheckboxGroup from \"./components/Checkbox/CheckboxGroup.vue\";\nimport type { CheckboxGroupOption } from \"./components/Checkbox/index\";\nimport checkedUrl1 from \"@/assets/checked1.png\";\nimport uncheckedUrl1 from \"@/assets/unchecked1.png\";\nimport checkedUrl2 from \"@/assets/checked2.png\";\nimport uncheckedUrl2 from \"@/assets/unchecked2.png\";\nimport checkboxCheckedUrl from \"@/assets/checkbox-checked.png\";\nimport checkboxUncheckedUrl from \"@/assets/checkbox-unchecked.png\";\nimport Toast from \"./components/Toast/Toast.vue\";\nimport { useToast } from \"./components/Toast/useToast\";\nimport Test from './components/Test/Test.vue';\n\nconst { addToast } = useToast();\n\n// 多选配置\nlet checkboxSelectedValues = ref<Array<string | number | boolean>>([\n  \"篮球\",\n  \"足球\",\n]);\nlet checkboxGroupOptions = ref<Array<CheckboxGroupOption>>([\n  {\n    label: \"篮球\",\n    value: \"篮球\",\n  },\n  {\n    label: \"足球\",\n    value: \"足球\",\n  },\n  {\n    label: \"排球\",\n    value: \"排球\",\n  },\n  {\n    label: \"羽毛球\",\n    value: \"羽毛球\",\n  },\n]);\n\n// 单选配置\nlet radioSelectedValue = ref(\"吉他3\");\nlet radioOptions = ref([\n  {\n    label: \"钢琴\",\n    value: \"钢琴\",\n  },\n  {\n    label: \"吉他\",\n    value: \"吉他\",\n  },\n  {\n    label: \"小提琴\",\n    value: \"小提琴\",\n  },\n  {\n    label: \"萨克斯\",\n    value: \"萨克斯\",\n  },\n]);\n\nconst age = ref(10);\n\nconst handleChange = (value: Array<string | number | boolean>, e: Event) => {\n  // console.log(value, e)\n};\n\nconst showToast = () => {\n  // addToast(\"This is an info message\", \"info\");\n  // addToast(\"This is a success message\", \"success\");\n  // addToast(\"This is a warning message\", \"warning\");\n  addToast(\"This is an error message\", \"error\");\n};\n\nconst test = ref(\"hello\")\n\n</script>\n\n<template>\n  <div class=\"checkbox-container\">\n    <h3>Checkbox 示例</h3>\n    <CheckboxGroup\n      v-model=\"checkboxSelectedValues\"\n      :selectedBackgroundImage=\"checkboxCheckedUrl\"\n      :unselectedBackgroundImage=\"checkboxUncheckedUrl\"\n      @change:modelValue=\"handleChange\"\n      direction=\"vertical\"\n    >\n      <Checkbox :value=\"'篮球'\" label=\"篮球\">篮球插槽</Checkbox>\n      <Checkbox :value=\"'足球'\" label=\"足球\" />\n      <Checkbox :value=\"'排球'\" label=\"排球\" />\n      <Checkbox :value=\"'羽毛球'\" label=\"羽毛球\" />\n    </CheckboxGroup>\n    {{ checkboxSelectedValues }}\n  </div>\n  <div class=\"radio-container\">\n    <h2>Radio 示例</h2>\n    <RadioGroup\n      v-model=\"radioSelectedValue\"\n      @change:modelValue=\"handleChange\"\n      :selectedBackgroundImage=\"checkedUrl2\"\n      :unselectedBackgroundImage=\"uncheckedUrl2\"\n      direction=\"vertical\"\n      :options=\"radioOptions\"\n    >\n      <Radio :value=\"'钢琴'\" label=\"钢琴1\">钢琴插槽</Radio>\n      <Radio :value=\"'吉他'\" label=\"吉他2\" />\n      <Radio :value=\"'小提琴'\" label=\"小提琴3\" />\n      <Radio :value=\"'萨克斯'\" label=\"萨克斯4\" />\n      <Radio :value=\"'手风琴'\">手风琴5</Radio>\n    </RadioGroup>\n    {{ radioSelectedValue }}\n  </div>\n  <div class=\"toast-container\">\n    <h3>Toast 示例</h3>\n    <ToastManager />\n    <button @click=\"showToast\">Show Toast</button>\n  </div>\n  <div>\n    <Test v-model=\"test\" />\n  </div>\n</template>\n\n<style scoped lang=\"less\">\n.checkbox-container,\n.radio-container,\n.toast-container {\n  border: 2px solid #ccc;\n  padding: 20px;\n  margin: 20px 0;\n  border-radius: 10px;\n}\n</style>\n",
+      "start": 1722139778605,
+      "end": 1722139778605,
+      "sourcemaps": null
+    },
+    {
+      "name": "vite:css",
+      "start": 1722139778605,
+      "end": 1722139778605,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1722139778605,
+      "end": 1722139778605,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1722139778605,
+      "end": 1722139778605,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1722139778605,
+      "end": 1722139778605,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "import _sfc_main from \"/Users/liukejun/Desktop/learn/vue3-learn/src/App.vue?vue&type=script&setup=true&lang.ts\";\nexport * from \"/Users/liukejun/Desktop/learn/vue3-learn/src/App.vue?vue&type=script&setup=true&lang.ts\";\nimport \"/Users/liukejun/Desktop/learn/vue3-learn/src/App.vue?vue&type=style&index=0&scoped=f93a48e2&lang.less\";\nimport _export_sfc from \"\\0plugin-vue:export-helper\";\nexport default /* @__PURE__ */ _export_sfc(_sfc_main, [[\"__scopeId\", \"data-v-f93a48e2\"]]);\n",
+      "start": 1722139778605,
+      "end": 1722139778627,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1722139778627,
+      "end": 1722139778627,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1722139778627,
+      "end": 1722139778627,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1722139778627,
+      "end": 1722139778627,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1722139778627,
+      "end": 1722139778627,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1722139778627,
+      "end": 1722139778627,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1722139778627,
+      "end": 1722139778627,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1722139778627,
+      "end": 1722139778627,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1722139778627,
+      "end": 1722139778627,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1722139778627,
+      "end": 1722139778627,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1722139778627,
+      "end": 1722139778627,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1722139778627,
+      "end": 1722139778627,
+      "order": "normal"
+    }
+  ]
+}

@@ -1,0 +1,119 @@
+{
+  "resolvedId": "/Users/liukejun/Desktop/learn/vue3-learn/src/components/Radio/Radio.vue?vue&type=script&setup=true&lang.ts",
+  "transforms": [
+    {
+      "name": "vite:vue",
+      "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { unref as _unref, isRef as _isRef, vModelRadio as _vModelRadio, createElementVNode as _createElementVNode, withDirectives as _withDirectives, normalizeStyle as _normalizeStyle, renderSlot as _renderSlot, openBlock as _openBlock, createElementBlock as _createElementBlock, createCommentVNode as _createCommentVNode, toDisplayString as _toDisplayString, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\"\n\nconst _withScopeId = (n: any) => (_pushScopeId(\"data-v-d74fc410\"),n=n(),_popScopeId(),n)\nconst _hoisted_1 = { class: \"radio-item\" }\nconst _hoisted_2 = [\"value\", \"id\", \"checked\"]\nconst _hoisted_3 = { key: 0 }\nconst _hoisted_4 = { key: 1 }\n\nimport { inject, computed } from \"vue\";\nimport type { Ref } from \"vue\";\n\ntype RadioItemProps = {\n  value: string | number | boolean;\n  label?: string;\n};\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'Radio',\n  props: {\n    value: { type: [String, Number, Boolean] },\n    label: {}\n  },\n  setup(__props: any) {\n\nconst props = __props;\n\nconst {\n  modelValue,\n  selectedBackgroundImage,\n  unselectedBackgroundImage,\n  updateModelValue,\n  changeModelValue,\n} = inject(\"radioGroup\") as {\n  modelValue: Ref<string | number | boolean>;\n  updateModelValue: (value: string | number | boolean) => void;\n  changeModelValue: (value: string | number | boolean, e: Event) => void;\n  selectedBackgroundImage: Ref<string>;\n  unselectedBackgroundImage: Ref<string>;\n};\n\nconst handleChange = (e: Event) => {\n  updateModelValue((e.target as HTMLInputElement).value);\n  changeModelValue((e.target as HTMLInputElement).value, e);\n};\n\nconst isChecked = computed(() => {\n  return modelValue.value === props.value;\n});\n\nconst radioBgStyle = computed(() => {\n  return {\n    backgroundImage: isChecked.value\n      ? `url(${selectedBackgroundImage.value})`\n      : `url(${unselectedBackgroundImage.value})`,\n  };\n});\n\nreturn (_ctx: any,_cache: any) => {\n  return (_openBlock(), _createElementBlock(\"label\", _hoisted_1, [\n    _withDirectives(_createElementVNode(\"input\", {\n      type: \"radio\",\n      name: \"radio\",\n      value: _ctx.value,\n      id: _ctx.label,\n      checked: isChecked.value,\n      \"onUpdate:modelValue\": _cache[0] || (_cache[0] = ($event: any) => (_isRef(modelValue) ? (modelValue).value = $event : null)),\n      onChange: handleChange,\n      class: \"radio\"\n    }, null, 40, _hoisted_2), [\n      [_vModelRadio, _unref(modelValue)]\n    ]),\n    _createElementVNode(\"i\", {\n      class: \"radio-item-icon\",\n      style: _normalizeStyle(radioBgStyle.value)\n    }, null, 4),\n    (_ctx.$slots.default)\n      ? (_openBlock(), _createElementBlock(\"span\", _hoisted_3, [\n          _renderSlot(_ctx.$slots, \"default\", {}, undefined, true)\n        ]))\n      : (_openBlock(), _createElementBlock(\"span\", _hoisted_4, _toDisplayString(_ctx.label), 1))\n  ]))\n}\n}\n\n})",
+      "start": 1722139778725,
+      "end": 1722139778725
+    },
+    {
+      "name": "vite:css",
+      "start": 1722139778725,
+      "end": 1722139778725,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "result": "import { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, isRef as _isRef, vModelRadio as _vModelRadio, createElementVNode as _createElementVNode, withDirectives as _withDirectives, normalizeStyle as _normalizeStyle, renderSlot as _renderSlot, openBlock as _openBlock, createElementBlock as _createElementBlock, createCommentVNode as _createCommentVNode, toDisplayString as _toDisplayString, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\";\nconst _withScopeId = (n) => (_pushScopeId(\"data-v-d74fc410\"), n = n(), _popScopeId(), n);\nconst _hoisted_1 = { class: \"radio-item\" };\nconst _hoisted_2 = [\"value\", \"id\", \"checked\"];\nconst _hoisted_3 = { key: 0 };\nconst _hoisted_4 = { key: 1 };\nimport { inject, computed } from \"vue\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"Radio\",\n  props: {\n    value: { type: [String, Number, Boolean] },\n    label: {}\n  },\n  setup(__props) {\n    const props = __props;\n    const {\n      modelValue,\n      selectedBackgroundImage,\n      unselectedBackgroundImage,\n      updateModelValue,\n      changeModelValue\n    } = inject(\"radioGroup\");\n    const handleChange = (e) => {\n      updateModelValue(e.target.value);\n      changeModelValue(e.target.value, e);\n    };\n    const isChecked = computed(() => {\n      return modelValue.value === props.value;\n    });\n    const radioBgStyle = computed(() => {\n      return {\n        backgroundImage: isChecked.value ? `url(${selectedBackgroundImage.value})` : `url(${unselectedBackgroundImage.value})`\n      };\n    });\n    return (_ctx, _cache) => {\n      return _openBlock(), _createElementBlock(\"label\", _hoisted_1, [\n        _withDirectives(_createElementVNode(\"input\", {\n          type: \"radio\",\n          name: \"radio\",\n          value: _ctx.value,\n          id: _ctx.label,\n          checked: isChecked.value,\n          \"onUpdate:modelValue\": _cache[0] || (_cache[0] = ($event) => _isRef(modelValue) ? modelValue.value = $event : null),\n          onChange: handleChange,\n          class: \"radio\"\n        }, null, 40, _hoisted_2), [\n          [_vModelRadio, _unref(modelValue)]\n        ]),\n        _createElementVNode(\"i\", {\n          class: \"radio-item-icon\",\n          style: _normalizeStyle(radioBgStyle.value)\n        }, null, 4),\n        _ctx.$slots.default ? (_openBlock(), _createElementBlock(\"span\", _hoisted_3, [\n          _renderSlot(_ctx.$slots, \"default\", {}, void 0, true)\n        ])) : (_openBlock(), _createElementBlock(\"span\", _hoisted_4, _toDisplayString(_ctx.label), 1))\n      ]);\n    };\n  }\n});\n",
+      "start": 1722139778725,
+      "end": 1722139778728,
+      "order": "normal",
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          "/Users/liukejun/Desktop/learn/vue3-learn/src/components/Radio/Radio.vue?vue&type=script&setup=true&lang.ts"
+        ],
+        "sourcesContent": [
+          "import { defineComponent as _defineComponent } from 'vue'\nimport { unref as _unref, isRef as _isRef, vModelRadio as _vModelRadio, createElementVNode as _createElementVNode, withDirectives as _withDirectives, normalizeStyle as _normalizeStyle, renderSlot as _renderSlot, openBlock as _openBlock, createElementBlock as _createElementBlock, createCommentVNode as _createCommentVNode, toDisplayString as _toDisplayString, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\"\n\nconst _withScopeId = (n: any) => (_pushScopeId(\"data-v-d74fc410\"),n=n(),_popScopeId(),n)\nconst _hoisted_1 = { class: \"radio-item\" }\nconst _hoisted_2 = [\"value\", \"id\", \"checked\"]\nconst _hoisted_3 = { key: 0 }\nconst _hoisted_4 = { key: 1 }\n\nimport { inject, computed } from \"vue\";\nimport type { Ref } from \"vue\";\n\ntype RadioItemProps = {\n  value: string | number | boolean;\n  label?: string;\n};\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'Radio',\n  props: {\n    value: { type: [String, Number, Boolean] },\n    label: {}\n  },\n  setup(__props: any) {\n\nconst props = __props;\n\nconst {\n  modelValue,\n  selectedBackgroundImage,\n  unselectedBackgroundImage,\n  updateModelValue,\n  changeModelValue,\n} = inject(\"radioGroup\") as {\n  modelValue: Ref<string | number | boolean>;\n  updateModelValue: (value: string | number | boolean) => void;\n  changeModelValue: (value: string | number | boolean, e: Event) => void;\n  selectedBackgroundImage: Ref<string>;\n  unselectedBackgroundImage: Ref<string>;\n};\n\nconst handleChange = (e: Event) => {\n  updateModelValue((e.target as HTMLInputElement).value);\n  changeModelValue((e.target as HTMLInputElement).value, e);\n};\n\nconst isChecked = computed(() => {\n  return modelValue.value === props.value;\n});\n\nconst radioBgStyle = computed(() => {\n  return {\n    backgroundImage: isChecked.value\n      ? `url(${selectedBackgroundImage.value})`\n      : `url(${unselectedBackgroundImage.value})`,\n  };\n});\n\nreturn (_ctx: any,_cache: any) => {\n  return (_openBlock(), _createElementBlock(\"label\", _hoisted_1, [\n    _withDirectives(_createElementVNode(\"input\", {\n      type: \"radio\",\n      name: \"radio\",\n      value: _ctx.value,\n      id: _ctx.label,\n      checked: isChecked.value,\n      \"onUpdate:modelValue\": _cache[0] || (_cache[0] = ($event: any) => (_isRef(modelValue) ? (modelValue).value = $event : null)),\n      onChange: handleChange,\n      class: \"radio\"\n    }, null, 40, _hoisted_2), [\n      [_vModelRadio, _unref(modelValue)]\n    ]),\n    _createElementVNode(\"i\", {\n      class: \"radio-item-icon\",\n      style: _normalizeStyle(radioBgStyle.value)\n    }, null, 4),\n    (_ctx.$slots.default)\n      ? (_openBlock(), _createElementBlock(\"span\", _hoisted_3, [\n          _renderSlot(_ctx.$slots, \"default\", {}, undefined, true)\n        ]))\n      : (_openBlock(), _createElementBlock(\"span\", _hoisted_4, _toDisplayString(_ctx.label), 1))\n  ]))\n}\n}\n\n})"
+        ],
+        "mappings": "AAAA,SAAS,mBAAmB,wBAAwB;AACpD,SAAS,SAAS,QAAQ,SAAS,QAAQ,eAAe,cAAc,sBAAsB,qBAAqB,kBAAkB,iBAAiB,kBAAkB,iBAAiB,cAAc,aAAa,aAAa,YAAY,sBAAsB,qBAAqB,sBAAsB,qBAAqB,mBAAmB,kBAAkB,eAAe,cAAc,cAAc,mBAAmB;AAEta,MAAM,eAAe,CAAC,OAAY,aAAa,iBAAiB,GAAE,IAAE,EAAE,GAAE,YAAY,GAAE;AACtF,MAAM,aAAa,EAAE,OAAO,aAAa;AACzC,MAAM,aAAa,CAAC,SAAS,MAAM,SAAS;AAC5C,MAAM,aAAa,EAAE,KAAK,EAAE;AAC5B,MAAM,aAAa,EAAE,KAAK,EAAE;AAE5B,SAAS,QAAQ,gBAAgB;AASjC,eAA4B,iCAAiB;AAAA,EAC3C,QAAQ;AAAA,EACR,OAAO;AAAA,IACL,OAAO,EAAE,MAAM,CAAC,QAAQ,QAAQ,OAAO,EAAE;AAAA,IACzC,OAAO,CAAC;AAAA,EACV;AAAA,EACA,MAAM,SAAc;AAEtB,UAAM,QAAQ;AAEd,UAAM;AAAA,MACJ;AAAA,MACA;AAAA,MACA;AAAA,MACA;AAAA,MACA;AAAA,IACF,IAAI,OAAO,YAAY;AAQvB,UAAM,eAAe,CAAC,MAAa;AACjC,uBAAkB,EAAE,OAA4B,KAAK;AACrD,uBAAkB,EAAE,OAA4B,OAAO,CAAC;AAAA,IAC1D;AAEA,UAAM,YAAY,SAAS,MAAM;AAC/B,aAAO,WAAW,UAAU,MAAM;AAAA,IACpC,CAAC;AAED,UAAM,eAAe,SAAS,MAAM;AAClC,aAAO;AAAA,QACL,iBAAiB,UAAU,QACvB,OAAO,wBAAwB,KAAK,MACpC,OAAO,0BAA0B,KAAK;AAAA,MAC5C;AAAA,IACF,CAAC;AAED,WAAO,CAAC,MAAU,WAAgB;AAChC,aAAQ,WAAW,GAAG,oBAAoB,SAAS,YAAY;AAAA,QAC7D,gBAAgB,oBAAoB,SAAS;AAAA,UAC3C,MAAM;AAAA,UACN,MAAM;AAAA,UACN,OAAO,KAAK;AAAA,UACZ,IAAI,KAAK;AAAA,UACT,SAAS,UAAU;AAAA,UACnB,uBAAuB,OAAO,CAAC,MAAM,OAAO,CAAC,IAAI,CAAC,WAAiB,OAAO,UAAU,IAAK,WAAY,QAAQ,SAAS;AAAA,UACtH,UAAU;AAAA,UACV,OAAO;AAAA,QACT,GAAG,MAAM,IAAI,UAAU,GAAG;AAAA,UACxB,CAAC,cAAc,OAAO,UAAU,CAAC;AAAA,QACnC,CAAC;AAAA,QACD,oBAAoB,KAAK;AAAA,UACvB,OAAO;AAAA,UACP,OAAO,gBAAgB,aAAa,KAAK;AAAA,QAC3C,GAAG,MAAM,CAAC;AAAA,QACT,KAAK,OAAO,WACR,WAAW,GAAG,oBAAoB,QAAQ,YAAY;AAAA,UACrD,YAAY,KAAK,QAAQ,WAAW,CAAC,GAAG,QAAW,IAAI;AAAA,QACzD,CAAC,MACA,WAAW,GAAG,oBAAoB,QAAQ,YAAY,iBAAiB,KAAK,KAAK,GAAG,CAAC;AAAA,MAC5F,CAAC;AAAA,IACH;AAAA,EACA;AAEA,CAAC;",
+        "names": []
+      }
+    },
+    {
+      "name": "vite:json",
+      "start": 1722139778728,
+      "end": 1722139778728,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1722139778728,
+      "end": 1722139778728,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "start": 1722139778728,
+      "end": 1722139778728,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1722139778728,
+      "end": 1722139778728,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1722139778728,
+      "end": 1722139778728,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1722139778728,
+      "end": 1722139778728,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1722139778728,
+      "end": 1722139778728,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1722139778728,
+      "end": 1722139778728,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1722139778728,
+      "end": 1722139778728,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1722139778728,
+      "end": 1722139778728,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1722139778728,
+      "end": 1722139778728,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1722139778728,
+      "end": 1722139778728,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1722139778728,
+      "end": 1722139778728,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1722139778728,
+      "end": 1722139778728,
+      "order": "normal"
+    }
+  ]
+}

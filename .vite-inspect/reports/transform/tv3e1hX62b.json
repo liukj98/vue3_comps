@@ -1,0 +1,119 @@
+{
+  "resolvedId": "/Users/liukejun/Desktop/learn/vue3-learn/src/App.vue?vue&type=style&index=0&scoped=f93a48e2&lang.less",
+  "transforms": [
+    {
+      "name": "vite:vue",
+      "result": "\n.checkbox-container,\n.radio-container,\n.toast-container {\n  border: 2px solid #ccc;\n  padding: 20px;\n  margin: 20px 0;\n  border-radius: 10px;\n}\n",
+      "start": 1722139778629,
+      "end": 1722139778630
+    },
+    {
+      "name": "vite:css",
+      "result": ".checkbox-container,\n.radio-container,\n.toast-container {\n  border: 2px solid #ccc;\n  padding: 20px;\n  margin: 20px 0;\n  border-radius: 10px;\n}\n",
+      "start": 1722139778630,
+      "end": 1722139778681,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1722139778681,
+      "end": 1722139778681,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1722139778681,
+      "end": 1722139778681,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1722139778681,
+      "end": 1722139778681,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": ".checkbox-container[data-v-f93a48e2],\n.radio-container[data-v-f93a48e2],\n.toast-container[data-v-f93a48e2] {\n  border: 2px solid #ccc;\n  padding: 20px;\n  margin: 20px 0;\n  border-radius: 10px;\n}\n",
+      "start": 1722139778681,
+      "end": 1722139778684,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1722139778684,
+      "end": 1722139778684,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1722139778684,
+      "end": 1722139778684,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "result": "",
+      "start": 1722139778684,
+      "end": 1722139778684,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1722139778684,
+      "end": 1722139778684,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1722139778684,
+      "end": 1722139778684,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1722139778684,
+      "end": 1722139778684,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1722139778684,
+      "end": 1722139778684,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1722139778684,
+      "end": 1722139778684,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1722139778684,
+      "end": 1722139778684,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1722139778684,
+      "end": 1722139778684,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1722139778684,
+      "end": 1722139778684,
+      "order": "normal"
+    }
+  ]
+}

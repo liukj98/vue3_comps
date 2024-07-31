@@ -1,0 +1,112 @@
+{
+  "resolvedId": "/Users/liukejun/Desktop/learn/vue3-learn/src/components/Radio/Radio.vue",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<template>\n  <label class=\"radio-item\">\n    <input\n      type=\"radio\"\n      name=\"radio\"\n      :value=\"value\"\n      :id=\"label\"\n      :checked=\"isChecked\"\n      v-model=\"modelValue\"\n      @change=\"handleChange\"\n      class=\"radio\"\n    />\n    <i class=\"radio-item-icon\" :style=\"radioBgStyle\"></i>\n    <span v-if=\"$slots.default\">\n      <slot></slot>\n    </span>\n    <span v-else>{{ label }}</span>\n  </label>\n</template>\n\n<script setup lang=\"ts\">\nimport { inject, computed } from \"vue\";\nimport type { Ref } from \"vue\";\n\ntype RadioItemProps = {\n  value: string | number | boolean;\n  label?: string;\n};\n\nconst props = withDefaults(defineProps<RadioItemProps>(), {});\n\nconst {\n  modelValue,\n  selectedBackgroundImage,\n  unselectedBackgroundImage,\n  updateModelValue,\n  changeModelValue,\n} = inject(\"radioGroup\") as {\n  modelValue: Ref<string | number | boolean>;\n  updateModelValue: (value: string | number | boolean) => void;\n  changeModelValue: (value: string | number | boolean, e: Event) => void;\n  selectedBackgroundImage: Ref<string>;\n  unselectedBackgroundImage: Ref<string>;\n};\n\nconst handleChange = (e: Event) => {\n  updateModelValue((e.target as HTMLInputElement).value);\n  changeModelValue((e.target as HTMLInputElement).value, e);\n};\n\nconst isChecked = computed(() => {\n  return modelValue.value === props.value;\n});\n\nconst radioBgStyle = computed(() => {\n  return {\n    backgroundImage: isChecked.value\n      ? `url(${selectedBackgroundImage.value})`\n      : `url(${unselectedBackgroundImage.value})`,\n  };\n});\n</script>\n\n<style scoped>\n.radio-item {\n  cursor: pointer;\n  .radio {\n    display: none;\n  }\n  .radio-item-icon {\n    background-size: contain;\n    display: inline-block;\n    width: 15px;\n    height: 15px;\n  }\n}\n</style>\n",
+      "start": 1722139778688,
+      "end": 1722139778699,
+      "sourcemaps": null
+    },
+    {
+      "name": "vite:css",
+      "start": 1722139778699,
+      "end": 1722139778699,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1722139778699,
+      "end": 1722139778699,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1722139778699,
+      "end": 1722139778699,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1722139778699,
+      "end": 1722139778699,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "import _sfc_main from \"/Users/liukejun/Desktop/learn/vue3-learn/src/components/Radio/Radio.vue?vue&type=script&setup=true&lang.ts\";\nexport * from \"/Users/liukejun/Desktop/learn/vue3-learn/src/components/Radio/Radio.vue?vue&type=script&setup=true&lang.ts\";\nimport \"/Users/liukejun/Desktop/learn/vue3-learn/src/components/Radio/Radio.vue?vue&type=style&index=0&scoped=d74fc410&lang.css\";\nimport _export_sfc from \"\\0plugin-vue:export-helper\";\nexport default /* @__PURE__ */ _export_sfc(_sfc_main, [[\"__scopeId\", \"data-v-d74fc410\"]]);\n",
+      "start": 1722139778699,
+      "end": 1722139778717,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1722139778717,
+      "end": 1722139778717,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1722139778717,
+      "end": 1722139778717,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1722139778717,
+      "end": 1722139778717,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1722139778717,
+      "end": 1722139778717,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1722139778723,
+      "end": 1722139778723,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1722139778723,
+      "end": 1722139778723,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1722139778723,
+      "end": 1722139778723,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1722139778723,
+      "end": 1722139778723,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1722139778723,
+      "end": 1722139778723,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1722139778723,
+      "end": 1722139778724,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1722139778724,
+      "end": 1722139778724,
+      "order": "normal"
+    }
+  ]
+}

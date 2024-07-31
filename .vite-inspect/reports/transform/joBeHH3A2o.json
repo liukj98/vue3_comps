@@ -1,0 +1,120 @@
+{
+  "resolvedId": "/Users/liukejun/Desktop/learn/vue3-learn/src/components/Toast/useToast.ts",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "import { ref } from \"vue\";\nimport { createApp, h } from \"vue\";\nimport Toast from \"./Toast.vue\";\n\ntype ToastOptions = {\n  id?: string;\n  message?: string;\n  type?: string;\n  duration?: number;\n};\n\nconst toasts = ref<Array<ToastOptions>>([]);\n\nconst addToast = (message: string, type = \"info\", duration = 3000) => {\n  const id = String(Date.now());\n  toasts.value.push({ id, message, type, duration });\n  setTimeout(() => {\n    removeToast(id);\n  }, duration);\n};\n\nconst removeToast = (id: string) => {\n  toasts.value = toasts.value.filter((toast) => toast.id !== id);\n};\n\nexport const ToastManager = {\n  setup() {\n    return { toasts };\n  },\n  render() {\n    return h(\n      \"div\",\n      {},\n      toasts.value.map((toast) => h(Toast, { ...toast }))\n    );\n  },\n};\n\nexport const useToast = () => {\n  return { addToast };\n};",
+      "start": 1722139778605,
+      "end": 1722139778627,
+      "sourcemaps": null
+    },
+    {
+      "name": "vite:css",
+      "start": 1722139778627,
+      "end": 1722139778627,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "result": "import { ref } from \"vue\";\nimport { createApp, h } from \"vue\";\nimport Toast from \"./Toast.vue\";\nconst toasts = ref([]);\nconst addToast = (message, type = \"info\", duration = 3e3) => {\n  const id = String(Date.now());\n  toasts.value.push({ id, message, type, duration });\n  setTimeout(() => {\n    removeToast(id);\n  }, duration);\n};\nconst removeToast = (id) => {\n  toasts.value = toasts.value.filter((toast) => toast.id !== id);\n};\nexport const ToastManager = {\n  setup() {\n    return { toasts };\n  },\n  render() {\n    return h(\n      \"div\",\n      {},\n      toasts.value.map((toast) => h(Toast, { ...toast }))\n    );\n  }\n};\nexport const useToast = () => {\n  return { addToast };\n};\n",
+      "start": 1722139778627,
+      "end": 1722139778675,
+      "order": "normal",
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          "/Users/liukejun/Desktop/learn/vue3-learn/src/components/Toast/useToast.ts"
+        ],
+        "sourcesContent": [
+          "import { ref } from \"vue\";\nimport { createApp, h } from \"vue\";\nimport Toast from \"./Toast.vue\";\n\ntype ToastOptions = {\n  id?: string;\n  message?: string;\n  type?: string;\n  duration?: number;\n};\n\nconst toasts = ref<Array<ToastOptions>>([]);\n\nconst addToast = (message: string, type = \"info\", duration = 3000) => {\n  const id = String(Date.now());\n  toasts.value.push({ id, message, type, duration });\n  setTimeout(() => {\n    removeToast(id);\n  }, duration);\n};\n\nconst removeToast = (id: string) => {\n  toasts.value = toasts.value.filter((toast) => toast.id !== id);\n};\n\nexport const ToastManager = {\n  setup() {\n    return { toasts };\n  },\n  render() {\n    return h(\n      \"div\",\n      {},\n      toasts.value.map((toast) => h(Toast, { ...toast }))\n    );\n  },\n};\n\nexport const useToast = () => {\n  return { addToast };\n};"
+        ],
+        "mappings": "AAAA,SAAS,WAAW;AACpB,SAAS,WAAW,SAAS;AAC7B,OAAO,WAAW;AASlB,MAAM,SAAS,IAAyB,CAAC,CAAC;AAE1C,MAAM,WAAW,CAAC,SAAiB,OAAO,QAAQ,WAAW,QAAS;AACpE,QAAM,KAAK,OAAO,KAAK,IAAI,CAAC;AAC5B,SAAO,MAAM,KAAK,EAAE,IAAI,SAAS,MAAM,SAAS,CAAC;AACjD,aAAW,MAAM;AACf,gBAAY,EAAE;AAAA,EAChB,GAAG,QAAQ;AACb;AAEA,MAAM,cAAc,CAAC,OAAe;AAClC,SAAO,QAAQ,OAAO,MAAM,OAAO,CAAC,UAAU,MAAM,OAAO,EAAE;AAC/D;AAEO,aAAM,eAAe;AAAA,EAC1B,QAAQ;AACN,WAAO,EAAE,OAAO;AAAA,EAClB;AAAA,EACA,SAAS;AACP,WAAO;AAAA,MACL;AAAA,MACA,CAAC;AAAA,MACD,OAAO,MAAM,IAAI,CAAC,UAAU,EAAE,OAAO,EAAE,GAAG,MAAM,CAAC,CAAC;AAAA,IACpD;AAAA,EACF;AACF;AAEO,aAAM,WAAW,MAAM;AAC5B,SAAO,EAAE,SAAS;AACpB;",
+        "names": []
+      }
+    },
+    {
+      "name": "vite:json",
+      "start": 1722139778676,
+      "end": 1722139778676,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1722139778676,
+      "end": 1722139778676,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "start": 1722139778676,
+      "end": 1722139778676,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1722139778676,
+      "end": 1722139778676,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1722139778676,
+      "end": 1722139778676,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1722139778676,
+      "end": 1722139778676,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1722139778676,
+      "end": 1722139778676,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1722139778676,
+      "end": 1722139778676,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1722139778676,
+      "end": 1722139778676,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1722139778676,
+      "end": 1722139778676,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1722139778676,
+      "end": 1722139778676,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1722139778676,
+      "end": 1722139778676,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1722139778676,
+      "end": 1722139778677,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1722139778677,
+      "end": 1722139778677,
+      "order": "normal"
+    }
+  ]
+}

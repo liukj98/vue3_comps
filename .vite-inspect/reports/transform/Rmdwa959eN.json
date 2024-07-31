@@ -1,0 +1,119 @@
+{
+  "resolvedId": "/Users/liukejun/Desktop/learn/vue3-learn/src/components/Toast/Toast.vue?vue&type=script&setup=true&lang.ts",
+  "transforms": [
+    {
+      "name": "vite:vue",
+      "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { toDisplayString as _toDisplayString, normalizeClass as _normalizeClass, openBlock as _openBlock, createElementBlock as _createElementBlock, createCommentVNode as _createCommentVNode } from \"vue\"\n\nimport { ref } from \"vue\";\n\ntype ToastProps = {\n  message: string;\n  type?: \"info\" | \"success\" | \"warning\" | \"error\";\n  duration?: number;\n};\n\n// Props for the Toast component\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'Toast',\n  props: {\n    message: {},\n    type: { default: \"info\" },\n    duration: { default: 3000 }\n  },\n  setup(__props: any) {\n\nconst props = __props;\n\nconst visible = ref(false);\n\nconst show = () => {\n  visible.value = true;\n  setTimeout(() => {\n    visible.value = false;\n  }, props.duration);\n};\n\n// Show the toast on mount\nshow();\n\nreturn (_ctx: any,_cache: any) => {\n  return (visible.value)\n    ? (_openBlock(), _createElementBlock(\"div\", {\n        key: 0,\n        class: _normalizeClass([\"toast\", _ctx.type])\n      }, _toDisplayString(_ctx.message), 3))\n    : _createCommentVNode(\"\", true)\n}\n}\n\n})",
+      "start": 1722139778714,
+      "end": 1722139778714
+    },
+    {
+      "name": "vite:css",
+      "start": 1722139778714,
+      "end": 1722139778714,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "result": "import { defineComponent as _defineComponent } from \"vue\";\nimport { toDisplayString as _toDisplayString, normalizeClass as _normalizeClass, openBlock as _openBlock, createElementBlock as _createElementBlock, createCommentVNode as _createCommentVNode } from \"vue\";\nimport { ref } from \"vue\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"Toast\",\n  props: {\n    message: {},\n    type: { default: \"info\" },\n    duration: { default: 3e3 }\n  },\n  setup(__props) {\n    const props = __props;\n    const visible = ref(false);\n    const show = () => {\n      visible.value = true;\n      setTimeout(() => {\n        visible.value = false;\n      }, props.duration);\n    };\n    show();\n    return (_ctx, _cache) => {\n      return visible.value ? (_openBlock(), _createElementBlock(\"div\", {\n        key: 0,\n        class: _normalizeClass([\"toast\", _ctx.type])\n      }, _toDisplayString(_ctx.message), 3)) : _createCommentVNode(\"\", true);\n    };\n  }\n});\n",
+      "start": 1722139778714,
+      "end": 1722139778717,
+      "order": "normal",
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          "/Users/liukejun/Desktop/learn/vue3-learn/src/components/Toast/Toast.vue?vue&type=script&setup=true&lang.ts"
+        ],
+        "sourcesContent": [
+          "import { defineComponent as _defineComponent } from 'vue'\nimport { toDisplayString as _toDisplayString, normalizeClass as _normalizeClass, openBlock as _openBlock, createElementBlock as _createElementBlock, createCommentVNode as _createCommentVNode } from \"vue\"\n\nimport { ref } from \"vue\";\n\ntype ToastProps = {\n  message: string;\n  type?: \"info\" | \"success\" | \"warning\" | \"error\";\n  duration?: number;\n};\n\n// Props for the Toast component\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'Toast',\n  props: {\n    message: {},\n    type: { default: \"info\" },\n    duration: { default: 3000 }\n  },\n  setup(__props: any) {\n\nconst props = __props;\n\nconst visible = ref(false);\n\nconst show = () => {\n  visible.value = true;\n  setTimeout(() => {\n    visible.value = false;\n  }, props.duration);\n};\n\n// Show the toast on mount\nshow();\n\nreturn (_ctx: any,_cache: any) => {\n  return (visible.value)\n    ? (_openBlock(), _createElementBlock(\"div\", {\n        key: 0,\n        class: _normalizeClass([\"toast\", _ctx.type])\n      }, _toDisplayString(_ctx.message), 3))\n    : _createCommentVNode(\"\", true)\n}\n}\n\n})"
+        ],
+        "mappings": "AAAA,SAAS,mBAAmB,wBAAwB;AACpD,SAAS,mBAAmB,kBAAkB,kBAAkB,iBAAiB,aAAa,YAAY,sBAAsB,qBAAqB,sBAAsB,2BAA2B;AAEtM,SAAS,WAAW;AAUpB,eAA4B,iCAAiB;AAAA,EAC3C,QAAQ;AAAA,EACR,OAAO;AAAA,IACL,SAAS,CAAC;AAAA,IACV,MAAM,EAAE,SAAS,OAAO;AAAA,IACxB,UAAU,EAAE,SAAS,IAAK;AAAA,EAC5B;AAAA,EACA,MAAM,SAAc;AAEtB,UAAM,QAAQ;AAEd,UAAM,UAAU,IAAI,KAAK;AAEzB,UAAM,OAAO,MAAM;AACjB,cAAQ,QAAQ;AAChB,iBAAW,MAAM;AACf,gBAAQ,QAAQ;AAAA,MAClB,GAAG,MAAM,QAAQ;AAAA,IACnB;AAGA,SAAK;AAEL,WAAO,CAAC,MAAU,WAAgB;AAChC,aAAQ,QAAQ,SACX,WAAW,GAAG,oBAAoB,OAAO;AAAA,QACxC,KAAK;AAAA,QACL,OAAO,gBAAgB,CAAC,SAAS,KAAK,IAAI,CAAC;AAAA,MAC7C,GAAG,iBAAiB,KAAK,OAAO,GAAG,CAAC,KACpC,oBAAoB,IAAI,IAAI;AAAA,IAClC;AAAA,EACA;AAEA,CAAC;",
+        "names": []
+      }
+    },
+    {
+      "name": "vite:json",
+      "start": 1722139778717,
+      "end": 1722139778717,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1722139778717,
+      "end": 1722139778717,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "start": 1722139778717,
+      "end": 1722139778717,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1722139778717,
+      "end": 1722139778717,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1722139778723,
+      "end": 1722139778723,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1722139778723,
+      "end": 1722139778723,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1722139778723,
+      "end": 1722139778723,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1722139778723,
+      "end": 1722139778723,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1722139778723,
+      "end": 1722139778723,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1722139778723,
+      "end": 1722139778724,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1722139778724,
+      "end": 1722139778724,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1722139778724,
+      "end": 1722139778724,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1722139778724,
+      "end": 1722139778724,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1722139778724,
+      "end": 1722139778724,
+      "order": "normal"
+    }
+  ]
+}

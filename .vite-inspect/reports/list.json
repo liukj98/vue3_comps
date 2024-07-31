@@ -1,0 +1,776 @@
+{
+  "root": "/Users/liukejun/Desktop/learn/vue3-learn",
+  "modules": [
+    {
+      "id": "\u0000plugin-vue:export-helper",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "vite:vue",
+          "transform": 0
+        }
+      ],
+      "virtual": true,
+      "totalTime": 0,
+      "invokeCount": 1,
+      "sourceSize": 155,
+      "distSize": 155
+    },
+    {
+      "id": "\u0000vite/modulepreload-polyfill.js",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "vite:modulepreload-polyfill",
+          "transform": 0
+        },
+        {
+          "name": "vite:modulepreload-polyfill",
+          "resolveId": 0
+        }
+      ],
+      "virtual": true,
+      "totalTime": 0,
+      "invokeCount": 1,
+      "sourceSize": 1280,
+      "distSize": 1280
+    },
+    {
+      "id": "/Users/liukejun/Desktop/learn/vue3-learn/index.html",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "vite:load-fallback",
+          "transform": 3
+        },
+        {
+          "name": "vite:build-html",
+          "transform": 10
+        }
+      ],
+      "virtual": false,
+      "totalTime": 13,
+      "invokeCount": 1,
+      "sourceSize": 331,
+      "distSize": 0
+    },
+    {
+      "id": "/Users/liukejun/Desktop/learn/vue3-learn/node_modules/@vue/reactivity/dist/reactivity.esm-bundler.js",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "vite:load-fallback",
+          "transform": 1
+        },
+        {
+          "name": "vite:define",
+          "transform": 3
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 1
+        }
+      ],
+      "virtual": false,
+      "totalTime": 4,
+      "invokeCount": 1,
+      "sourceSize": 35380,
+      "distSize": 0
+    },
+    {
+      "id": "/Users/liukejun/Desktop/learn/vue3-learn/node_modules/@vue/runtime-core/dist/runtime-core.esm-bundler.js",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "vite:load-fallback",
+          "transform": 7
+        },
+        {
+          "name": "vite:define",
+          "transform": 16
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 0
+        }
+      ],
+      "virtual": false,
+      "totalTime": 23,
+      "invokeCount": 1,
+      "sourceSize": 254767,
+      "distSize": 0
+    },
+    {
+      "id": "/Users/liukejun/Desktop/learn/vue3-learn/node_modules/@vue/runtime-dom/dist/runtime-dom.esm-bundler.js",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "vite:load-fallback",
+          "transform": 7
+        },
+        {
+          "name": "vite:define",
+          "transform": 32
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 0
+        }
+      ],
+      "virtual": false,
+      "totalTime": 39,
+      "invokeCount": 1,
+      "sourceSize": 50139,
+      "distSize": 0
+    },
+    {
+      "id": "/Users/liukejun/Desktop/learn/vue3-learn/node_modules/@vue/shared/dist/shared.esm-bundler.js",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "vite:load-fallback",
+          "transform": 7
+        },
+        {
+          "name": "vite:define",
+          "transform": 3
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 0
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 0
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 0
+        }
+      ],
+      "virtual": false,
+      "totalTime": 10,
+      "invokeCount": 1,
+      "sourceSize": 21180,
+      "distSize": 0
+    },
+    {
+      "id": "/Users/liukejun/Desktop/learn/vue3-learn/node_modules/vue/dist/vue.runtime.esm-bundler.js",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "vite:load-fallback",
+          "transform": 22
+        },
+        {
+          "name": "vite:define",
+          "transform": 48
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 0
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 0
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 1
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 0
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 0
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 0
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 0
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 0
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 0
+        }
+      ],
+      "virtual": false,
+      "totalTime": 70,
+      "invokeCount": 1,
+      "sourceSize": 580,
+      "distSize": 0
+    },
+    {
+      "id": "/Users/liukejun/Desktop/learn/vue3-learn/src/App.vue",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "vite:load-fallback",
+          "transform": 0
+        },
+        {
+          "name": "vite:vue",
+          "transform": 22
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 0
+        }
+      ],
+      "virtual": false,
+      "totalTime": 22,
+      "invokeCount": 1,
+      "sourceSize": 3620,
+      "distSize": 0
+    },
+    {
+      "id": "/Users/liukejun/Desktop/learn/vue3-learn/src/App.vue?vue&type=script&setup=true&lang.ts",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "vite:vue",
+          "transform": 1
+        },
+        {
+          "name": "vite:esbuild",
+          "transform": 10
+        }
+      ],
+      "virtual": true,
+      "totalTime": 11,
+      "invokeCount": 1,
+      "sourceSize": 6596,
+      "distSize": 0
+    },
+    {
+      "id": "/Users/liukejun/Desktop/learn/vue3-learn/src/App.vue?vue&type=style&index=0&scoped=f93a48e2&lang.less",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "vite:vue",
+          "transform": 1
+        },
+        {
+          "name": "vite:css",
+          "transform": 51
+        },
+        {
+          "name": "vite:vue",
+          "transform": 3
+        }
+      ],
+      "virtual": true,
+      "totalTime": 55,
+      "invokeCount": 1,
+      "sourceSize": 145,
+      "distSize": 0
+    },
+    {
+      "id": "/Users/liukejun/Desktop/learn/vue3-learn/src/assets/checkbox-checked.png",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "vite:asset",
+          "transform": 6
+        },
+        {
+          "name": "alias",
+          "resolveId": 1
+        }
+      ],
+      "virtual": true,
+      "totalTime": 6,
+      "invokeCount": 1,
+      "sourceSize": 3355,
+      "distSize": 0
+    },
+    {
+      "id": "/Users/liukejun/Desktop/learn/vue3-learn/src/assets/checkbox-unchecked.png",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "vite:asset",
+          "transform": 18
+        },
+        {
+          "name": "alias",
+          "resolveId": 1
+        }
+      ],
+      "virtual": true,
+      "totalTime": 18,
+      "invokeCount": 1,
+      "sourceSize": 2399,
+      "distSize": 0
+    },
+    {
+      "id": "/Users/liukejun/Desktop/learn/vue3-learn/src/assets/checked1.png",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "vite:asset",
+          "transform": 5
+        },
+        {
+          "name": "alias",
+          "resolveId": 1
+        }
+      ],
+      "virtual": true,
+      "totalTime": 5,
+      "invokeCount": 1,
+      "sourceSize": 3383,
+      "distSize": 0
+    },
+    {
+      "id": "/Users/liukejun/Desktop/learn/vue3-learn/src/assets/checked2.png",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "vite:asset",
+          "transform": 6
+        },
+        {
+          "name": "alias",
+          "resolveId": 1
+        }
+      ],
+      "virtual": true,
+      "totalTime": 6,
+      "invokeCount": 1,
+      "sourceSize": 4383,
+      "distSize": 0
+    },
+    {
+      "id": "/Users/liukejun/Desktop/learn/vue3-learn/src/assets/unchecked1.png",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "vite:asset",
+          "transform": 6
+        },
+        {
+          "name": "alias",
+          "resolveId": 1
+        }
+      ],
+      "virtual": true,
+      "totalTime": 6,
+      "invokeCount": 1,
+      "sourceSize": 4467,
+      "distSize": 0
+    },
+    {
+      "id": "/Users/liukejun/Desktop/learn/vue3-learn/src/assets/unchecked2.png",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "vite:asset",
+          "transform": 25
+        },
+        {
+          "name": "alias",
+          "resolveId": 1
+        }
+      ],
+      "virtual": true,
+      "totalTime": 25,
+      "invokeCount": 1,
+      "sourceSize": 4715,
+      "distSize": 0
+    },
+    {
+      "id": "/Users/liukejun/Desktop/learn/vue3-learn/src/components/Checkbox/Checkbox.vue",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "vite:load-fallback",
+          "transform": 19
+        },
+        {
+          "name": "vite:vue",
+          "transform": 10
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 1
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 0
+        }
+      ],
+      "virtual": false,
+      "totalTime": 29,
+      "invokeCount": 1,
+      "sourceSize": 1918,
+      "distSize": 0
+    },
+    {
+      "id": "/Users/liukejun/Desktop/learn/vue3-learn/src/components/Checkbox/Checkbox.vue?vue&type=script&setup=true&lang.ts",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "vite:vue",
+          "transform": 0
+        },
+        {
+          "name": "vite:esbuild",
+          "transform": 16
+        }
+      ],
+      "virtual": true,
+      "totalTime": 16,
+      "invokeCount": 1,
+      "sourceSize": 3155,
+      "distSize": 0
+    },
+    {
+      "id": "/Users/liukejun/Desktop/learn/vue3-learn/src/components/Checkbox/Checkbox.vue?vue&type=style&index=0&scoped=c58423b9&lang.css",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "vite:vue",
+          "transform": 0
+        },
+        {
+          "name": "vite:css",
+          "transform": 0
+        },
+        {
+          "name": "vite:vue",
+          "transform": 0
+        }
+      ],
+      "virtual": true,
+      "totalTime": 0,
+      "invokeCount": 1,
+      "sourceSize": 124,
+      "distSize": 0
+    },
+    {
+      "id": "/Users/liukejun/Desktop/learn/vue3-learn/src/components/Checkbox/CheckboxGroup.vue",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "vite:load-fallback",
+          "transform": 14
+        },
+        {
+          "name": "vite:vue",
+          "transform": 15
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 1
+        }
+      ],
+      "virtual": false,
+      "totalTime": 29,
+      "invokeCount": 1,
+      "sourceSize": 1537,
+      "distSize": 0
+    },
+    {
+      "id": "/Users/liukejun/Desktop/learn/vue3-learn/src/components/Checkbox/CheckboxGroup.vue?vue&type=script&setup=true&lang.ts",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "vite:vue",
+          "transform": 0
+        },
+        {
+          "name": "vite:esbuild",
+          "transform": 14
+        }
+      ],
+      "virtual": true,
+      "totalTime": 14,
+      "invokeCount": 1,
+      "sourceSize": 2283,
+      "distSize": 0
+    },
+    {
+      "id": "/Users/liukejun/Desktop/learn/vue3-learn/src/components/Radio/Radio.vue",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "vite:load-fallback",
+          "transform": 11
+        },
+        {
+          "name": "vite:vue",
+          "transform": 18
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 1
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 0
+        }
+      ],
+      "virtual": false,
+      "totalTime": 29,
+      "invokeCount": 1,
+      "sourceSize": 1741,
+      "distSize": 0
+    },
+    {
+      "id": "/Users/liukejun/Desktop/learn/vue3-learn/src/components/Radio/Radio.vue?vue&type=script&setup=true&lang.ts",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "vite:vue",
+          "transform": 0
+        },
+        {
+          "name": "vite:esbuild",
+          "transform": 3
+        }
+      ],
+      "virtual": true,
+      "totalTime": 3,
+      "invokeCount": 1,
+      "sourceSize": 2879,
+      "distSize": 0
+    },
+    {
+      "id": "/Users/liukejun/Desktop/learn/vue3-learn/src/components/Radio/Radio.vue?vue&type=style&index=0&scoped=d74fc410&lang.css",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "vite:vue",
+          "transform": 0
+        },
+        {
+          "name": "vite:css",
+          "transform": 0
+        },
+        {
+          "name": "vite:vue",
+          "transform": 1
+        }
+      ],
+      "virtual": true,
+      "totalTime": 1,
+      "invokeCount": 1,
+      "sourceSize": 187,
+      "distSize": 0
+    },
+    {
+      "id": "/Users/liukejun/Desktop/learn/vue3-learn/src/components/Radio/RadioGroup.vue",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "vite:load-fallback",
+          "transform": 7
+        },
+        {
+          "name": "vite:vue",
+          "transform": 22
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 1
+        }
+      ],
+      "virtual": false,
+      "totalTime": 29,
+      "invokeCount": 1,
+      "sourceSize": 1451,
+      "distSize": 0
+    },
+    {
+      "id": "/Users/liukejun/Desktop/learn/vue3-learn/src/components/Radio/RadioGroup.vue?vue&type=script&setup=true&lang.ts",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "vite:vue",
+          "transform": 0
+        },
+        {
+          "name": "vite:esbuild",
+          "transform": 14
+        }
+      ],
+      "virtual": true,
+      "totalTime": 14,
+      "invokeCount": 1,
+      "sourceSize": 2260,
+      "distSize": 0
+    },
+    {
+      "id": "/Users/liukejun/Desktop/learn/vue3-learn/src/components/Test/Test.vue",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "vite:load-fallback",
+          "transform": 22
+        },
+        {
+          "name": "vite:vue",
+          "transform": 14
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 0
+        }
+      ],
+      "virtual": false,
+      "totalTime": 36,
+      "invokeCount": 1,
+      "sourceSize": 658,
+      "distSize": 0
+    },
+    {
+      "id": "/Users/liukejun/Desktop/learn/vue3-learn/src/components/Test/Test.vue?vue&type=script&setup=true&lang.ts",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "vite:vue",
+          "transform": 0
+        },
+        {
+          "name": "vite:esbuild",
+          "transform": 14
+        }
+      ],
+      "virtual": true,
+      "totalTime": 14,
+      "invokeCount": 1,
+      "sourceSize": 1132,
+      "distSize": 0
+    },
+    {
+      "id": "/Users/liukejun/Desktop/learn/vue3-learn/src/components/Toast/Toast.vue",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "vite:load-fallback",
+          "transform": 10
+        },
+        {
+          "name": "vite:vue",
+          "transform": 18
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 0
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 1
+        }
+      ],
+      "virtual": false,
+      "totalTime": 28,
+      "invokeCount": 1,
+      "sourceSize": 1050,
+      "distSize": 0
+    },
+    {
+      "id": "/Users/liukejun/Desktop/learn/vue3-learn/src/components/Toast/Toast.vue?vue&type=script&setup=true&lang.ts",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "vite:vue",
+          "transform": 0
+        },
+        {
+          "name": "vite:esbuild",
+          "transform": 3
+        }
+      ],
+      "virtual": true,
+      "totalTime": 3,
+      "invokeCount": 1,
+      "sourceSize": 1103,
+      "distSize": 0
+    },
+    {
+      "id": "/Users/liukejun/Desktop/learn/vue3-learn/src/components/Toast/Toast.vue?vue&type=style&index=0&scoped=f62acddb&lang.css",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "vite:vue",
+          "transform": 0
+        },
+        {
+          "name": "vite:css",
+          "transform": 0
+        },
+        {
+          "name": "vite:vue",
+          "transform": 2
+        }
+      ],
+      "virtual": true,
+      "totalTime": 2,
+      "invokeCount": 1,
+      "sourceSize": 402,
+      "distSize": 0
+    },
+    {
+      "id": "/Users/liukejun/Desktop/learn/vue3-learn/src/components/Toast/useToast.ts",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "vite:load-fallback",
+          "transform": 22
+        },
+        {
+          "name": "vite:esbuild",
+          "transform": 48
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 0
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 0
+        }
+      ],
+      "virtual": false,
+      "totalTime": 70,
+      "invokeCount": 1,
+      "sourceSize": 822,
+      "distSize": 0
+    },
+    {
+      "id": "/Users/liukejun/Desktop/learn/vue3-learn/src/main.ts",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "vite:load-fallback",
+          "transform": 1
+        },
+        {
+          "name": "vite:esbuild",
+          "transform": 9
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 1
+        }
+      ],
+      "virtual": false,
+      "totalTime": 10,
+      "invokeCount": 1,
+      "sourceSize": 189,
+      "distSize": 0
+    }
+  ],
+  "ssrModules": []
+}

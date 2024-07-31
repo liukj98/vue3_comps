@@ -1,0 +1,117 @@
+{
+  "resolvedId": "/Users/liukejun/Desktop/learn/vue3-learn/src/components/Radio/Radio.vue?vue&type=style&index=0&scoped=d74fc410&lang.css",
+  "transforms": [
+    {
+      "name": "vite:vue",
+      "result": "\n.radio-item {\n  cursor: pointer;\n  .radio {\n    display: none;\n  }\n  .radio-item-icon {\n    background-size: contain;\n    display: inline-block;\n    width: 15px;\n    height: 15px;\n  }\n}\n",
+      "start": 1722139778725,
+      "end": 1722139778725
+    },
+    {
+      "name": "vite:css",
+      "result": "\n.radio-item {\n  cursor: pointer;\n  .radio {\n    display: none;\n  }\n  .radio-item-icon {\n    background-size: contain;\n    display: inline-block;\n    width: 15px;\n    height: 15px;\n  }\n}\n",
+      "start": 1722139778725,
+      "end": 1722139778725,
+      "order": "normal",
+      "sourcemaps": null
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1722139778725,
+      "end": 1722139778725,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1722139778725,
+      "end": 1722139778725,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1722139778725,
+      "end": 1722139778725,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "\n.radio-item[data-v-d74fc410] {\n  cursor: pointer;\n.radio[data-v-d74fc410] {\n    display: none;\n}\n.radio-item-icon[data-v-d74fc410] {\n    background-size: contain;\n    display: inline-block;\n    width: 15px;\n    height: 15px;\n}\n}\n",
+      "start": 1722139778725,
+      "end": 1722139778726,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1722139778726,
+      "end": 1722139778726,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1722139778726,
+      "end": 1722139778726,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "result": "",
+      "start": 1722139778726,
+      "end": 1722139778726,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1722139778726,
+      "end": 1722139778726,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1722139778726,
+      "end": 1722139778726,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1722139778726,
+      "end": 1722139778726,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1722139778726,
+      "end": 1722139778726,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1722139778726,
+      "end": 1722139778726,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1722139778726,
+      "end": 1722139778726,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1722139778726,
+      "end": 1722139778726,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1722139778726,
+      "end": 1722139778726,
+      "order": "normal"
+    }
+  ]
+}

@@ -1,0 +1,120 @@
+{
+  "resolvedId": "/Users/liukejun/Desktop/learn/vue3-learn/src/main.ts",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "import { createApp } from 'vue'\nimport App from './App.vue'\nimport { ToastManager } from './components/Toast/useToast'\n\ncreateApp(App).component(\"ToastManager\", ToastManager).mount(\"#app\")\n",
+      "start": 1722139778592,
+      "end": 1722139778593,
+      "sourcemaps": null
+    },
+    {
+      "name": "vite:css",
+      "start": 1722139778593,
+      "end": 1722139778593,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "result": "import { createApp } from \"vue\";\nimport App from \"./App.vue\";\nimport { ToastManager } from \"./components/Toast/useToast\";\ncreateApp(App).component(\"ToastManager\", ToastManager).mount(\"#app\");\n",
+      "start": 1722139778593,
+      "end": 1722139778602,
+      "order": "normal",
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          "/Users/liukejun/Desktop/learn/vue3-learn/src/main.ts"
+        ],
+        "sourcesContent": [
+          "import { createApp } from 'vue'\nimport App from './App.vue'\nimport { ToastManager } from './components/Toast/useToast'\n\ncreateApp(App).component(\"ToastManager\", ToastManager).mount(\"#app\")\n"
+        ],
+        "mappings": "AAAA,SAAS,iBAAiB;AAC1B,OAAO,SAAS;AAChB,SAAS,oBAAoB;AAE7B,UAAU,GAAG,EAAE,UAAU,gBAAgB,YAAY,EAAE,MAAM,MAAM;",
+        "names": []
+      }
+    },
+    {
+      "name": "vite:json",
+      "start": 1722139778602,
+      "end": 1722139778602,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1722139778602,
+      "end": 1722139778602,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "start": 1722139778602,
+      "end": 1722139778602,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1722139778602,
+      "end": 1722139778602,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1722139778602,
+      "end": 1722139778602,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1722139778602,
+      "end": 1722139778602,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1722139778602,
+      "end": 1722139778602,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1722139778602,
+      "end": 1722139778602,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1722139778602,
+      "end": 1722139778602,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1722139778602,
+      "end": 1722139778602,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1722139778602,
+      "end": 1722139778603,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1722139778603,
+      "end": 1722139778603,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1722139778603,
+      "end": 1722139778603,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1722139778603,
+      "end": 1722139778603,
+      "order": "normal"
+    }
+  ]
+}

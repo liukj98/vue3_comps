@@ -1,0 +1,117 @@
+{
+  "resolvedId": "/Users/liukejun/Desktop/learn/vue3-learn/src/components/Checkbox/Checkbox.vue?vue&type=style&index=0&scoped=c58423b9&lang.css",
+  "transforms": [
+    {
+      "name": "vite:vue",
+      "result": "\n.checkbox-item {\n  cursor: pointer;\n  .checkbox-item-icon {\n    background-size: contain;\n    display: inline-block;\n  }\n}\n",
+      "start": 1722139778727,
+      "end": 1722139778727
+    },
+    {
+      "name": "vite:css",
+      "result": "\n.checkbox-item {\n  cursor: pointer;\n  .checkbox-item-icon {\n    background-size: contain;\n    display: inline-block;\n  }\n}\n",
+      "start": 1722139778727,
+      "end": 1722139778727,
+      "order": "normal",
+      "sourcemaps": null
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1722139778727,
+      "end": 1722139778727,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1722139778727,
+      "end": 1722139778727,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1722139778727,
+      "end": 1722139778727,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "\n.checkbox-item[data-v-c58423b9] {\n  cursor: pointer;\n.checkbox-item-icon[data-v-c58423b9] {\n    background-size: contain;\n    display: inline-block;\n}\n}\n",
+      "start": 1722139778727,
+      "end": 1722139778727,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1722139778727,
+      "end": 1722139778727,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1722139778727,
+      "end": 1722139778727,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "result": "",
+      "start": 1722139778728,
+      "end": 1722139778728,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1722139778728,
+      "end": 1722139778728,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1722139778728,
+      "end": 1722139778728,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1722139778728,
+      "end": 1722139778728,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1722139778728,
+      "end": 1722139778728,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1722139778728,
+      "end": 1722139778728,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1722139778728,
+      "end": 1722139778728,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1722139778728,
+      "end": 1722139778728,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1722139778728,
+      "end": 1722139778728,
+      "order": "normal"
+    }
+  ]
+}
