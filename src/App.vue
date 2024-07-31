@@ -42,6 +42,11 @@
     <!-- 直接使用组件 -->
     <!-- <Toast message="kkkkk" :duration="1000000" /> -->
   </div>
+  <div class="dialog-container">
+    <h3>Dialog 示例</h3>
+    <Dialog v-model="dialogVisible" title="hello" content="world"/>
+    <button @click="showDialog">展示</button>
+  </div>
   <div class="test-container">
     <Test v-model="test" />
   </div>
@@ -63,6 +68,13 @@ import checkboxUncheckedUrl from "@/assets/checkbox-unchecked.png";
 import Toast from "./components/Toast/Toast.vue";
 import Test from "./components/Test/Test.vue";
 import toast from './components/Toast/toastService'
+import Dialog from './components/Dialog/Dialog.vue'
+
+const dialogVisible = ref(false);
+
+const showDialog = () => {
+  dialogVisible.value = true;
+}
 
 const showToast = () => {
   toast('默认样式') 
@@ -139,7 +151,8 @@ const test = ref("hello");
 .checkbox-container,
 .radio-container,
 .toast-container,
-.test-container {
+.test-container,
+.dialog-container {
   border: 2px solid #ccc;
   padding: 20px;
   margin: 20px 0;
